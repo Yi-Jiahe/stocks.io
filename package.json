@@ -2,9 +2,11 @@
   "name": "stocks.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "start": "node src/server/server.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
     "socket.io": "^4.1.2"
   },
   "devDependencies": {
-    "webpack": "^5.37.1"
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
   }
 }
